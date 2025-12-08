@@ -1,0 +1,115 @@
+name: Bug Report
+description: Report a bug in Crimson Lock
+title: "[BUG] "
+labels: ["bug", "needs-triage"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **⚠️ SECURITY NOTICE**: Do not report security vulnerabilities here! 
+        Email security issues privately to the maintainers.
+        
+        Thank you for taking the time to report a bug! Please fill out this form completely.
+
+  - type: checkboxes
+    id: security-check
+    attributes:
+      label: Security Confirmation
+      description: Please confirm this is not a security issue
+      options:
+        - label: This is NOT a security vulnerability
+          required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: What version of Crimson Lock are you using?
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: What platform are you running on?
+      options:
+        - Linux (Ubuntu/Debian)
+        - Linux (Fedora/RHEL)
+        - Linux (Arch)
+        - Linux (Other)
+        - Windows 10
+        - Windows 11
+        - macOS (Intel)
+        - macOS (Apple Silicon)
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of the bug
+      placeholder: Describe what happened...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Steps to reproduce the behavior
+      placeholder: |
+        1. Go to...
+        2. Click on...
+        3. Scroll down to...
+        4. See error...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What you expected to happen
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs/Error Messages
+      description: Any relevant logs or error messages (sanitized of sensitive data)
+      render: text
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment Details
+      description: Additional environment information
+      placeholder: |
+        - Qt Version:
+        - Compiler:
+        - Desktop Environment (Linux):
+        - Any other relevant details...
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I have searched existing issues
+        - label: I can reproduce this bug consistently
+        - label: I have included all relevant information
+        - label: Logs are sanitized of sensitive data

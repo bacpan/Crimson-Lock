@@ -1,0 +1,89 @@
+name: Feature Request
+description: Suggest a new feature for Crimson Lock
+title: "[FEATURE] "
+labels: ["enhancement", "needs-triage"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting a new feature! Please provide as much detail as possible.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Description
+      description: What problem would this feature solve?
+      placeholder: "I'm frustrated when..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe your ideal solution
+      placeholder: "I would like..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative Solutions
+      description: Any alternative solutions or workarounds you've considered
+      placeholder: "I've also considered..."
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature to you?
+      options:
+        - Low - Nice to have
+        - Medium - Would improve workflow
+        - High - Critical for my use case
+
+  - type: checkboxes
+    id: security-considerations
+    attributes:
+      label: Security Considerations
+      description: Have you considered the security implications?
+      options:
+        - label: This feature does not impact security
+        - label: This feature has security implications that I've described below
+
+  - type: textarea
+    id: security-details
+    attributes:
+      label: Security Impact Details
+      description: If this feature has security implications, please describe them
+      placeholder: "This feature affects security by..."
+
+  - type: checkboxes
+    id: platform-support
+    attributes:
+      label: Platform Requirements
+      description: Which platforms should support this feature?
+      options:
+        - label: Linux
+        - label: Windows
+        - label: macOS
+        - label: All platforms
+
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Implementation Ideas
+      description: Any ideas on how this could be implemented?
+      placeholder: "This could be implemented by..."
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I have searched existing feature requests
+        - label: I have considered security implications
+        - label: I understand this may take time to implement
+        - label: I am willing to help with testing

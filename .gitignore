@@ -1,0 +1,94 @@
+# Build directories
+build/
+build-*/
+**/build/
+
+# Deployment directories  
+deploy-*/
+install-*/
+**/deploy-*/
+**/install-*/
+CrimsonLock-Windows-Portable/
+CrimsonLock-Windows.zip
+
+# Qt generated files
+*_moc.cpp
+moc_*.cpp
+*.moc
+ui_*.h
+*_autogen/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+CMakeUserPresets.json
+
+# Executable files
+CrimsonLock
+CrimsonLock.exe
+*.app/
+
+# IDE and editor files
+.vscode/settings.json
+.vscode/launch.json
+.vscode/c_cpp_properties.json
+*.user
+*.pro.user*
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Personal/Test files
+test_*
+*_test
+personal_*
+notes.txt
+*.backup
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Vault files (never commit user data!)
+vault.gpg
+*.vault
+*.crimson
+
+# Icon generation temp files  
+*.png.backup
+crimson-lock-icon-*.png
+
+# Generated icons - keeping main icon for GitHub display
+# assets/crimson-lock-icon.png - commented out to include in repo
+assets/crimson-lock-icon*.xmp
+
+# Personal/Development files
+uninstall-desktop.sh
+install-user.bat
+install-user.sh
+
+# AI/Development assistance files
+.github/copilot-instructions.md
+copilot-instructions.md
+
+# Editor specific files
+*.swp
+*.swo
+*~
+.vimrc
+.editorconfig
