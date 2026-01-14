@@ -272,5 +272,5 @@ See [CHANGELOG.md](CHANGELOG.md) for a detailed history of changes and releases.
 <div align="center">
   <p><strong>⚠️ Security Warning</strong></p>
   <p>This is cryptographic software. While it implements industry-standard security practices, no software is 100% secure. Use at your own risk and maintain proper backup procedures for critical data.</p>
-  <p><em>Made with by bacpan</em></p>
+  <p><em>Made by bacpan</em></p>
 </div>
